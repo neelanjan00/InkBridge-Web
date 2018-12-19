@@ -7,11 +7,11 @@ body{
 }
 
 form#mainform{
-    margin-top: 75px;
+    
     width: 560px;
     background-color: rgba(0, 0, 0, 0.25);
     border-radius: 10px;
-    margin-bottom: 75px;
+    margin-top: 57px;
 }
 
 h2#createacc{
@@ -32,24 +32,24 @@ h2#createacc{
     color: white;
     opacity: 0.6; /* Firefox */
     font-family: 'Acme', sans-serif;
-    }
+}
 
-    :-ms-input-placeholder { /* Internet Explorer 10-11 */
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
     color: white;
     font-family: 'Acme', sans-serif;
-    }
+}
 
-    ::-ms-input-placeholder { /* Microsoft Edge */
+::-ms-input-placeholder { /* Microsoft Edge */
     color: white;
     font-family: 'Acme', sans-serif;
-    }
+}
 
 .inp{
     border: 0;
     outline: 0;
     background: transparent;
     border-bottom: 1px solid white;
-    width: 180px;
+    width: 320px;
     -webkit-transition: all 0.20s ease-in-out;
     -moz-transition: all 0.20s ease-in-out;
     -ms-transition: all 0.20s ease-in-out;
@@ -60,7 +60,7 @@ h2#createacc{
 }
 
 .inp:focus{
-    width: 220px;
+    width: 375px;
     border-bottom: 2px solid white;
 }
 
@@ -195,7 +195,8 @@ label{
     font-family: 'Raleway', sans-serif;
 }
 
-@media only screen and (max-width: 500px){
+
+@media only screen and (max-width: 600px){
     form#mainform{
         background-color: rgba(165, 22, 22, 0);
         margin-top: 0px;
@@ -203,6 +204,14 @@ label{
 
     h2#createacc{
         font-size: 9.5vw;
+    }
+
+    .inp{
+        width: 200px;
+    }
+
+    .inp:focus{
+        width: 235px;
     }
 
     #writeups{
@@ -217,8 +226,29 @@ label{
     #countryId, #stateId, #cityId{
     width: 28%;
     }
+
+    div#termsandcon{
+        padding-left: 6.7vw;
+    }
 }
 
+
+@media only screen and (max-width: 350px){
+
+    label#termstext{
+        font-size: 15px;
+    }
+
+    div#termsandcon{
+        padding-left: 14px;
+    }
+}
+
+@media only screen and (min-width: 575px){
+    h2#createacc{
+        font-size: 35px;
+    }
+}
 /*
 #poetry,
 #stories,

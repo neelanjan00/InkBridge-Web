@@ -30,7 +30,7 @@
                 <div class="row">
                     <div class="col-12">
                         <center>
-                            <img src="/Images/logo.png" width="200" height="200" class="img-fluid" id="logo">
+                            <br><img src="/Images/logo.png" width="200" height="200" class="img-fluid" id="logo">
                         </center>
                     </div>
                 </div>
@@ -174,45 +174,51 @@
                             <div class="col-12">
                                 <label>Enter your current location:</label><br>
                                 <select name="country" class="countries" id="countryId">
-                                    <option value="">Select Country</option>
+                                    <option value="">Country</option>
                                 </select>
                                 <select name="state" class="states" id="stateId">
-                                    <option value="">Select State</option>
+                                    <option value="">State</option>
                                 </select>
                                 <select name="city" class="cities" id="cityId">
-                                    <option value="">Select City</option>
+                                    <option value="">City</option>
                                 </select>
                                 <br><br><br>
                             </div>
                         </div>
 
                         <label style="margin-left:6.2vw;">Enter the genre you want to read (with a # eg: #crime)</label>
-                        <p id="repeattext"></p>
                         <div class="row">
-                            <div class="offset-xl-2 offset-lg-2 offset-md-2 offset-sm-2 col-xl-8 col-lg-8 col-md-8 col-sm-8 col-11">
+                            <div class="offset-sm-2 offset-1 col-12">
+                                <p id="repeattext"></p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="offset-xl-2 offset-lg-2 offset-md-2 offset-sm-2 offset-1 col-xl-8 col-lg-8 col-md-8 col-sm-8 col-10">
                                 <input type="text" name="genre" id="genre"><br>
                             </div>
                         </div>
                         <div class="row">
-                            <div class="offset-xl-2 offset-lg-2 offset-md-2 offset-sm-2 col-xl-8 col-lg-8 col-md-8 col-sm-8 col-11">
+                            <div class="offset-xl-2 offset-lg-2 offset-md-2 offset-sm-2 offset-1 col-xl-8 col-lg-8 col-md-8 col-sm-8 col-10">
                                 <select id="select_id" name="select_id" onchange="addgenre();">
                                     <option>-----TYPE ABOVE AND SELECT HERE-----</option>
                                 </select>
                             </div>
                         </div><br>
                         <div class="row">
-                            <div class="offset-2 col-10" id="addhere">
+                            <div class="offset-sm-2 offset-1 col-10" id="addhere">
                             </div>
                         </div>
                         <br>
-                        <div class="row">
-                            <div style="padding-left: 1.5vw;" class="offset-3 col-12" id="termsandcon">
-                                <input class="form-check-input" type="checkbox" id="terms" required="">
-                                <label class="form-check-label" for="terms">
-                                    <a style="color: white;" href="" target="_blank">I agree to the Terms and Conditions</a>
-                                </label>
-                            </div>
-                        </div>
+                            <center>
+                                <div class="row" id="termsandcon">
+                                    <div class="col-12">
+                                            <input class="form-check-input" type="checkbox" id="terms" required="">
+                                            <label class="form-check-label" for="terms" id="termstext">
+                                                <a style="color: white;" href="#" target="_blank">I agree to the Terms and Conditions</a>
+                                            </label>
+                                    </div>
+                                </div>
+                            </center>
                         <br><br>
                         <center>
                             <button id="submit" type="submit">Submit</button><br>
