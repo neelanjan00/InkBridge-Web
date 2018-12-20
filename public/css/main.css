@@ -179,6 +179,7 @@ button.hashbutton{
     outline-color: white;
     border-color: white;
     border-radius: 12px;
+    box-shadow: 3px 3px 3px #adaaaa;
 }
 
 button.hashbutton:hover{
