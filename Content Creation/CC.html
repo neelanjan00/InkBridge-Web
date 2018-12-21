@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Content Creation</title>
+    <link rel="icon" href="Images/logo.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="CC.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Amarante" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Pathway+Gothic+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Charm" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Prompt" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Signika" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Teko" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Satisfy" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cardo" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Amiri" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Viga" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar sticky-top navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" id="brand" href="#">
+            <img src="Images/logo.png" width="50" height="50" class="d-inline-block align-top" alt="">
+        </a>
+        <form class="form-inline">
+            <input class="form-control" type="text" id="searchfield" placeholder="Search">
+            <button class="btn btn-dark" id="searchbutton" type="submit"><i class="fas fa-search" style="color:black;"></i></button>
+        </form>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText"
+            aria-expanded="false" aria-label="Toggle navigation" id="togglerbutton">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="navbar-brand" href="#" id="welcome">
+                        <p id="navname">Raied Razi</p>
+                        <img src="Images/cardicon.png" width="40" height="40" class="d-inline-block align-top" alt="">
+                    </a>
+                    <a><img src="Images/Quill.png" class="navicons">
+                        <p style="display: inline; color: white;">:</p>
+                        <p class="qnltext">10</p>
+                    </a>
+                    <a><img src="Images/Pen.png" class="navicons">
+                        <p style="display: inline; color: white;">:</p>
+                        <p class="qnltext">2</p>
+                    </a>
+                    <a><img src="Images/Level.png" class="navicons">
+                        <p style="display: inline; color: white;">:</p>
+                        <p class="qnltext">2</p>
+                    </a>
+                    <a class="nav-link" href="#" data-toggle="modal" data-target=".bd-example-modal-lg" id="notifbell">
+                        <img src="Images/Bell.png" class="navicons" id="bellicon">
+                        <span id="unreadnotif" style="display: inline-block; background-color:black; border-radius: 10px; height: 18px; min-width: 10.7px;"><span>
+                                <p id="unreadnotiftext" style="font-weight: 500; text-align: center; padding-left: 4px; padding-right:4px; color: white; font-size: 11px;">12</p>
+                            </span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container-fluid mt-4">
+        <div class="row">
+            <div class="col-sm-3 d-none d-sm-block">
+                <center>
+                    <p><i>“Create the highest, grandest vision possible for your life, because you become what you
+                            believe”</i></p><br>
+                    <p><i>“When you can’t find the sunshine, be the sunshine”</i></p><br>
+                    <p><i>“The grass is greener where you water it”</i></p><br>
+                    <p><i>"Wherever life plants you, bloom with grace”</i></p>
+                </center>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-6" id="centeroverlay">
+                <div class="row">
+                    <div class="col-12" id="editoriconsoverlay">
+                        <img class="mt-3 img-fluid editoricons" src="Images/l-align.png">
+                        <img class="mt-3 img-fluid editoricons" src="Images/c-align.png">
+                        <img class="mt-3 img-fluid editoricons" src="Images/r-align.png">
+                        <img class="mt-3 img-fluid editoricons" src="Images/Justify.png">
+                        <img id="editoriconborder" class="mt-3 img-fluid editoricons" src="Images/Bold.png">
+                        <img class="mt-3 img-fluid editoricons" src="Images/Italic.png">
+                        <img class="mt-3 img-fluid editoricons" src="Images/Underline.png">
+                        <img id="editoriconborder" class="mt-3 img-fluid editoricons" src="Images/uo-list.png">
+                        <img class="mt-3 img-fluid editoricons" src="Images/o-list.png">
+                        <img class="mt-3 img-fluid editoricons" src="Images/l-indent.png">
+                        <img class="mt-3 img-fluid editoricons" src="Images/r-indent.png">
+                        <img id="editoriconborder" class="mt-3 img-fluid editoricons" src="Images/Image.png">
+                        <img class="mt-3 img-fluid editoricons" src="Images/Link.png">
+                        <img class="mt-3 img-fluid editoricons" src="Images/Quote.png">
+                        <img class="mt-3 img-fluid editoricons" src="Images/Strikethrough.png">
+                        <img id="editoriconborder" class="mt-3 img-fluid editoricons" src="Images/Undo.png">
+                        <img class="mt-3 img-fluid editoricons" src="Images/Redo.png">
+                    </div>
+                </div>
+                <div class="row mt-4">
+                    <div class="col-12">
+                        <textarea></textarea>
+                    </div>
+                </div>
+                <div class="row mt-4">
+                    <div class="col-12">
+                        <ul class="pagination pagination-sm justify-content-center">
+                            <li class="page-item">
+                                <a class="page-link" href="#" aria-label="Previous">
+                                    <span style="color: rgb(65, 65, 65);" aria-hidden="true">&laquo;</span>
+                                </a>
+                            </li>
+                            <li class="page-item active"><a class="page-link" href="#"><p style="color: white; font-family: 'Prompt', sans-serif; display: inline;">Prompt</p></a></li>
+                            <li class="page-item"><a class="page-link" href="#"><p style="color: rgb(65, 65, 65); font-family: 'Charm', cursive; display: inline;">Charm</p></a></li>
+                            <li class="page-item"><a class="page-link" href="#"><p style="color: rgb(65, 65, 65); font-family: 'Arvo', serif; display: inline;">Arvo</p></a></li>
+                            <li class="page-item"><a class="page-link" href="#"><p style="color: rgb(65, 65, 65); font-family: 'Lobster', cursive; display: inline;">Lobster</p></a></li>
+                            <li style="display: none;" class="page-item"><a class="page-link" href="#"><p style="color: rgb(65, 65, 65); font-family: 'Pacifico', cursive; display: inline;">Pacifico</p></a></li>
+                            <li style="display: none;" class="page-item"><a class="page-link" href="#"><p style="color: rgb(65, 65, 65); font-family: 'Abel', sans-serif; display: inline;">Abel</p></a></li>
+                            <li style="display: none;" class="page-item"><a class="page-link" href="#"><p style="color: rgb(65, 65, 65); font-family: 'Signika', sans-serif; display: inline;">Signika</p></a></li>
+                            <li style="display: none;" class="page-item"><a class="page-link" href="#"><p style="color: rgb(65, 65, 65); font-family: 'Teko', sans-serif; display: inline;">Teko</p></a></li>
+                            <li style="display: none;" class="page-item"><a class="page-link" href="#"><p style="color: rgb(65, 65, 65); font-family: 'Satisfy', cursive; display: inline;">Satisfy</p></a></li>
+                            <li style="display: none;" class="page-item"><a class="page-link" href="#"><p style="color: rgb(65, 65, 65); font-family: 'Cardo', serif; display: inline;">Cardo</p></a></li>
+                            <li style="display: none;" class="page-item"><a class="page-link" href="#"><p style="color: rgb(65, 65, 65); font-family: 'Amiri', serif; display: inline;">Amiri</p></a></li>
+                            <li style="display: none;" class="page-item"><a class="page-link" href="#"><p style="color: rgb(65, 65, 65); font-family: 'Viga', sans-serif; display: inline;">Viga</p></a></li>
+                                <a class="page-link" id="next" href="#" aria-label="Next">
+                                    <span style="color: rgb(65, 65, 65);" aria-hidden="true">&raquo;</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row mt-4">
+                    <div class="col-12">
+                        <button class="mb-4" id="submit" style="float: right;">Submit</button>
+                    </div>
+                </div>
+            </div>
+            
+            <!--Small Screen Notifaction Modal Starts-->
+
+            <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-lg" style="overflow-y: scroll; max-height:85%;  margin-top: 50px; margin-bottom:50px;">
+                    <div class="modal-content">
+
+                        <div class="modal-header text-center">
+                            <h4 class="notification-title">Notifications</h4>
+                        </div>
+
+                        <div class="modal-body">
+                            <div class="notification-body">
+                                <div class="notifications">
+                                    <ul class="notification-list">
+
+
+                                        <!---NOTIFICATION 1 SMALL SCREEN MODAL-->
+
+                                        <li>
+                                            <div class="media">
+                                                <div class="media-left">
+                                                    <a href="#">
+                                                        <img src="Images/usericon.png" class="media-object cat-icon rounded"
+                                                            alt="...">
+                                                    </a>
+                                                </div>
+                                                <div class="media-body">
+                                                    <ul class="n-user-list">
+                                                        <li><a href="#"><img src="Images/cardicon.png" class="avatar rounded"
+                                                                    alt="..."></a></li>
+                                                        <li><a href="#"><img src="Images/cardicon.png" class="avatar rounded"
+                                                                    alt="..."></a></li>
+                                                    </ul>
+                                                    <p class="media-heading"><b>Abhinandan Purkait</b> and <b>Raeid
+                                                            Razi</b> followed you.</p>
+                                                </div>
+                                            </div>
+                                        </li>
+
+                                        <!---NOTIFICATION 2 SMALL SCREEN MODAL-->
+
+                                        <li>
+                                            <div class="media">
+                                                <div class="media-left">
+                                                    <a href="#">
+                                                        <img src="Images/hearticon.png" class="media-object cat-icon rounded-circle"
+                                                            alt="...">
+                                                    </a>
+                                                </div>
+                                                <div class="media-body">
+                                                    <ul class="n-user-list">
+                                                        <li><a href="#"><img src="Images/cardicon.png" class="avatar rounded"
+                                                                    alt="..."></a></li>
+                                                        <li><a href="#"><img src="Images/cardicon.png" class="avatar rounded"
+                                                                    alt="..."></a></li>
+                                                        <li><a href="#"><img src="Images/cardicon.png" class="avatar rounded"
+                                                                    alt="..."></a></li>
+                                                        <li><a href="#"><img src="Images/cardicon.png" class="avatar rounded"
+                                                                    alt="..."></a></li>
+                                                        <li><a href="#"><img src="Images/cardicon.png" class="avatar rounded"
+                                                                    alt="..."></a></li>
+                                                    </ul>
+                                                    <p class="media-heading"><b>Abhinandan Purkait</b> and 4 others
+                                                        Like your Post.</p>
+                                                </div>
+                                            </div>
+                                        </li>
+
+                                        <!---NOTIFICATION 3 SMALL SCREEN MODAL-->
+
+                                        <li>
+                                            <div class="media">
+                                                <div class="media-left">
+                                                    <a href="#">
+                                                        <img src="Images/commenticon.png" class="media-object cat-icon rounded"
+                                                            alt="...">
+                                                    </a>
+                                                </div>
+                                                <div class="media-body">
+                                                    <ul class="n-user-list">
+                                                        <li><a href="#"><img src="Images/cardicon.png" class="avatar rounded"
+                                                                    alt="..."></a></li>
+                                                        <li><a href="#"><img src="Images/cardicon.png" class="avatar rounded"
+                                                                    alt="..."></a></li>
+                                                    </ul>
+                                                    <p class="media-heading"><b>Abhinandan Purkait</b> and <b>Raeid
+                                                            Razi</b> commented on your
+                                                        post.</p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <!---NOTIFICATION 4 SMALL SCREEN MODAL-->
+
+                                        <li>
+                                            <div class="media">
+                                                <div class="media-left">
+                                                    <a href="#">
+                                                        <img src="Images/usericon.png" class="media-object cat-icon rounded"
+                                                            alt="...">
+                                                    </a>
+                                                </div>
+                                                <div class="media-body">
+                                                    <ul class="n-user-list">
+                                                        <li><a href="#"><img src="Images/cardicon.png" class="avatar rounded"
+                                                                    alt="..."></a></li>
+                                                        <li><a href="#"><img src="Images/cardicon.png" class="avatar rounded"
+                                                                    alt="..."></a></li>
+                                                    </ul>
+                                                    <p class="media-heading"><b>Abhinandan Purkait</b> and <b>Raeid
+                                                            Razi</b> followed you.</p>
+                                                </div>
+                                            </div>
+                                        </li>
+
+                                        <!---NOTIFICATION 5 SMALL SCREEN MODAL-->
+
+                                        <li>
+                                            <div class="media">
+                                                <div class="media-left">
+                                                    <a href="#">
+                                                        <img src="Images/shareicon.png" class="media-object cat-icon rounded"
+                                                            alt="...">
+                                                    </a>
+                                                </div>
+                                                <div class="media-body">
+                                                    <ul class="n-user-list">
+                                                        <li><a href="#"><img src="Images/cardicon.png" class="avatar rounded"
+                                                                    alt="..."></a></li>
+                                                        <li><a href="#"><img src="Images/cardicon.png" class="avatar rounded"
+                                                                    alt="..."></a></li>
+                                                    </ul>
+                                                    <p class="media-heading"><b>Abhinandan Purkait</b> shared your
+                                                        post.</p>
+                                                </div>
+                                            </div>
+                                        </li>
+
+
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">InkBridge</div>
+                    </div>
+                </div>
+            </div>
+
+            <!--Small Screen Notifaction Modal Ends-->
+
+            <!---Right Part Starts-->
+
+            <div class="col-lg-3 col-md-6 col-sm-6" id="right">
+                <div class="notification-body">
+                    <div class="page-header text-center">
+                        <h4 class="notification-title">Notifications</h4>
+                    </div>
+                    <div class="notifications">
+                        <ul class="notification-list">
+
+                            <!---NOTIFICATION 1 LARGE SCREEN-->
+
+                            <li>
+                                <div class="media">
+                                    <div class="media-left">
+                                        <a href="#">
+                                            <img src="Images/usericon.png" class="media-object cat-icon rounded" alt="...">
+                                        </a>
+                                    </div>
+                                    <div class="media-body">
+                                        <ul class="n-user-list">
+                                            <li><a href="#"><img src="Images/cardicon.png" class="avatar rounded" alt="..."></a></li>
+                                            <li><a href="#"><img src="Images/cardicon.png" class="avatar rounded" alt="..."></a></li>
+                                        </ul>
+                                        <p class="media-heading"><b>Abhinandan Purkait</b> and <b>Raeid Razi</b>
+                                            followed you.</p>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <!---NOTIFICATION 2 LARGE SCREEN-->
+
+                            <li>
+                                <div class="media">
+                                    <div class="media-left">
+                                        <a href="#">
+                                            <img src="Images/hearticon.png" class="media-object cat-icon rounded-circle"
+                                                alt="...">
+                                        </a>
+                                    </div>
+                                    <div class="media-body">
+                                        <ul class="n-user-list">
+                                            <li><a href="#"><img src="Images/cardicon.png" class="avatar rounded" alt="..."></a></li>
+                                            <li><a href="#"><img src="Images/cardicon.png" class="avatar rounded" alt="..."></a></li>
+                                            <li><a href="#"><img src="Images/cardicon.png" class="avatar rounded" alt="..."></a></li>
+                                            <li><a href="#"><img src="Images/cardicon.png" class="avatar rounded" alt="..."></a></li>
+                                            <li><a href="#"><img src="Images/cardicon.png" class="avatar rounded" alt="..."></a></li>
+                                        </ul>
+                                        <p class="media-heading"><b>Abhinandan Purkait</b> and 4 others Like your Post.</p>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <!---NOTIFICATION 3 LARGE SCREEN-->
+
+                            <li>
+                                <div class="media">
+                                    <div class="media-left">
+                                        <a href="#">
+                                            <img src="Images/commenticon.png" class="media-object cat-icon rounded" alt="...">
+                                        </a>
+                                    </div>
+                                    <div class="media-body">
+                                        <ul class="n-user-list">
+                                            <li><a href="#"><img src="Images/cardicon.png" class="avatar rounded" alt="..."></a></li>
+                                            <li><a href="#"><img src="Images/cardicon.png" class="avatar rounded" alt="..."></a></li>
+                                        </ul>
+                                        <p class="media-heading"><b>Abhinandan Purkait</b> and <b>Raeid Razi</b>
+                                            commented on your post.</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <!---NOTIFICATION 4 LARGE SCREEN-->
+
+                            <li>
+                                <div class="media">
+                                    <div class="media-left">
+                                        <a href="#">
+                                            <img src="Images/usericon.png" class="media-object cat-icon rounded" alt="...">
+                                        </a>
+                                    </div>
+                                    <div class="media-body">
+                                        <ul class="n-user-list">
+                                            <li><a href="#"><img src="Images/cardicon.png" class="avatar rounded" alt="..."></a></li>
+                                            <li><a href="#"><img src="Images/cardicon.png" class="avatar rounded" alt="..."></a></li>
+                                        </ul>
+                                        <p class="media-heading"><b>Abhinandan Purkait</b> and <b>Raeid Razi</b>
+                                            followed you.</p>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <!---NOTIFICATION 5 LARGE SCREEN-->
+
+                            <li>
+                                <div class="media">
+                                    <div class="media-left">
+                                        <a href="#">
+                                            <img src="Images/shareicon.png" class="media-object cat-icon rounded" alt="...">
+                                        </a>
+                                    </div>
+                                    <div class="media-body">
+                                        <ul class="n-user-list">
+                                            <li><a href="#"><img src="Images/cardicon.png" class="avatar rounded" alt="..."></a></li>
+                                            <li><a href="#"><img src="Images/cardicon.png" class="avatar rounded" alt="..."></a></li>
+                                        </ul>
+                                        <p class="media-heading"><b>Abhinandan Purkait</b> shared your post.</p>
+                                    </div>
+                                </div>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!---Right Part Ends-->
+
+        </div>
+    </div>
+    </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
